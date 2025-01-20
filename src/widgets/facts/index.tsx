@@ -9,10 +9,10 @@ import Wrap from '@shared/ui/wrap'
 import Button from '@shared/ui/btns/btn'
 
 interface IProps {
-  children: React.ReactNode
-  darkTheme?: boolean
-  buttonText?: string
-  cards: TCard[]
+  children: React.ReactNode;
+  darkTheme?: boolean;
+  buttonText?: string;
+  cards: TCard[] | any;
 }
 
 const Facts: FC<IProps> = ({ children, buttonText, darkTheme, cards }) => (

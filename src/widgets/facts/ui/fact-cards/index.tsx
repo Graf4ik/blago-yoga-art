@@ -6,8 +6,8 @@ import { TCard } from '@/entities/fact-card/lib/type'
 import styles from './style.module.scss'
 
 type TProps = {
-  cards: TCard[]
-  darkTheme?: boolean
+  cards: TCard[];
+  darkTheme?: boolean;
 }
 
 const FactCards: FC<TProps> = ({ cards, darkTheme = false }) => (
