@@ -1,0 +1,11 @@
+.wrap {
+  width: 100%;
+
+  &  > div {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1270px;
+    padding: 0 20px;
+  }
+}

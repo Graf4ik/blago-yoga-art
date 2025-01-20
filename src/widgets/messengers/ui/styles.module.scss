@@ -1,0 +1,43 @@
+.messengers {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+  
+    .open {
+      display: block;
+      margin-bottom: 8px;
+    }
+  
+    .closed {
+      display: none;
+    }
+  
+    .messengersBtn {
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      background: #68D391;
+      cursor: pointer;
+      position: relative;
+    }
+  
+    .backgroundBtn {
+      background: #fff;
+      width: 53px;
+      height: 53px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
+    }
+  
+    .iconMessageImg {
+      position: absolute;
+      margin: 12px;
+      width: 30px;
+    }
+  
+    .iconSocial {
+      width: 27px;
+      margin-top: 6px;
+    }
+  }

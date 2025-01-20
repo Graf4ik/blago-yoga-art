@@ -18,9 +18,22 @@
       }
     ],
     "paths": {
+      "@app/*": ["./src/app/*"],
+			"@entities/*": ["./src/entities/*"],
+			"@features/*": ["./src/features/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@shared/*": ["./src/shared/*"],
+			"@widgets/*": ["./src/widgets/*"],
+
+      "@/var": [
+        "./src/app/styles/variable.scss"
+      ],
+      "@/mixins": [
+        "./src/app/styles/mixins.scss"
+      ],
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/main-page"],
   "exclude": ["node_modules"]
 }

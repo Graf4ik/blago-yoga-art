@@ -1,0 +1,64 @@
+@import "@/var";
+@import "@/mixins";
+
+.button {
+  height: fit-content;
+  color: $btn;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid $btn;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s;
+  white-space: nowrap;
+  width: fit-content;
+
+  &.large {
+    @include paddingX(16px, 40px);
+    line-height: 52px;
+    font-size: 16px;
+    font-weight: 700;
+
+    @media (max-width: 350px) {
+      letter-spacing: 0;
+    }
+  }
+
+  &.regular {
+    @include paddingX(12px, 30px);
+    line-height: 44px;
+    font-size: 14px;
+  }
+
+  &.small {
+    @include paddingY(6px, 10px);
+    @include paddingX(12px, 24px);
+    font-size: 12px;
+  }
+
+  &.fill {
+    width: 100%;
+  }
+
+  &.solid {
+    background-color: $btn;
+    color: #fff;
+
+    &:hover {
+      background-color: $btn-hover;
+      border: 1px solid $btn-hover;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: $btn;
+    color: #fff;
+  }
+}
